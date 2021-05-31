@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "parcel src/index.html",
+    "preinstall": "npx npm-force-resolutions",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
@@ -18,12 +19,16 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.22.0",
-    "parcel": "^1.12.3",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "parcel": "^2.0.0-beta.2",
     "prettier": "^2.3.0"
   },
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
   },
   "browserslist": [
     "last 2 Chrome versions"
